@@ -1,0 +1,51 @@
+{
+  "name": "nespresso_automation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@wdio/appium-service": "^8.39.0",
+    "allure-service-client": "^1.0.2",
+    "chrome-modheader": "^2.0.7",
+    "clipboardy": "2.3.0",
+    "graphql-import-node": "^0.0.4",
+    "graphql-request": "^3.7.0",
+    "jwt-decode": "^3.1.2",
+    "node-fetch": "^2.6.7",
+    "unzipper": "^0.10.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@heathmont/prettier-config": "^1.0.4",
+    "@wdio/allure-reporter": "^8.20.0",
+    "@wdio/browserstack-service": "^8.20.5",
+    "@wdio/cli": "^8.22.1",
+    "@wdio/jasmine-framework": "^8.22.1",
+    "@wdio/local-runner": "^8.22.1",
+    "@wdio/reporter": "^8.21.0",
+    "@wdio/selenium-standalone-service": "^8.15.0",
+    "@wdio/spec-reporter": "^8.21.0",
+    "allure-commandline": "^2.17.2",
+    "axios": "^0.26.1",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "minimist": "^1.2.6",
+    "selenium-standalone": "^9.0.6"
+  },
+  "scripts": {
+    "test": "wdio run ./wdio.conf.mjs",
+    "test:headless": "npm test -- --headless",
+    "lint": "npx prettier --check .",
+    "format": "npx prettier --write ."
+  },
+  "volta": {
+    "node": "18.18.2",
+    "npm": "9.8.1"
+  }
+}

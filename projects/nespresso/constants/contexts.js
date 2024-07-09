@@ -1,0 +1,3 @@
+export const SOCIALMEDIA_WEBVIEW_CONTEXT = 'WEBVIEW_chrome';
+export const NATIVE_CONTEXT = 'NATIVE_APP';
+export const OFFICIAL_PARTNERS_WEBVIEW_CONTEXT = 'WEBVIEW_context';
