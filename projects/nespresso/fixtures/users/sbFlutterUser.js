@@ -8,14 +8,6 @@ export default class NpFlutterUser extends BasicUser {
     this.password = 'N/A@123';
     this.incorrectUsername = 'wrongcr%^^&edentials';
     this.incorrectPassword = 'wrongp^&assword';
-    this.exceedCharUsername = 'N/A@gmail.com';
-    this.exceedCharPassword = 'N/A';
-    this.identicalUsername = 'identicalUserName';
-    this.identicalPassword = 'identicalUserName';
-    this.unsupportedCharUsername = 'N/A';
-    this.unsupportedCharPassword = 'N/A';
-    this.disabledUsername = 'N/A';
-    this.disabledPassword = 'N/A@123';
     allureReporter.addStep(`Using user ${this.username} with password ${this.password}`);
   }
 }
